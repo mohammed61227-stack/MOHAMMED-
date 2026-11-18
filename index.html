@@ -3,49 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خدمات كهرباء السيارات وتشخيص الأعطال</title>
+    <meta name="description" content="ورشة محمد لخدمات كهرباء وتشخيص أعطال السيارات وفحص الكمبيوتر وإصلاح الأسلاك والدينامو والسلف.">
+    <title>ورشة محمد | كهرباء السيارات وتشخيص الأعطال</title>
     <style>
-        body { font-family: Tahoma, Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; text-align: center; }
-        header { background-color: #1a1a2e; color: #fff; padding: 40px 20px; }
-        header h1 { margin: 0 0 10px; color: #e94560; }
-        .container { max-width: 800px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
-        .service-card { background: #162447; color: #fff; padding: 20px; border-radius: 6px; }
-        .btn-whatsapp { display: inline-block; margin-top: 25px; background-color: #25d366; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px; }
-        footer { margin-top: 30px; font-size: 14px; color: #777; padding: 15px; }
+        :root {
+            --primary: #e94560;
+            --navy: #1a1a2e;
+            --blue: #162447;
+            --light: #f4f4f9;
+            --white: #ffffff;
+            --text: #333333;
+            --green: #25d366;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Tahoma, Arial, sans-serif;
+            background: var(--light);
+            color: var(--text);
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--navy), var(--blue));
+            color: var(--white);
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            color: var(--primary);
+            font-size: clamp(28px, 5vw, 44px);
+        }
+
+        header p {
+            max-width: 650px;
+            margin: 10px auto 0;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 25px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background: var(--blue);
+            color: var(--white);
+            padding: 22px 18px;
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .service-card:hover { transform: translateY(-5px); }
+
+        .service-card h3 { color: #ffc857; }
+
+        .contact-box {
+            margin-top: 28px;
+            padding: 20px;
+            background: #eef7ff;
+            border-radius: 10px;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            margin-top: 10px;
+            background: var(--green);
+            color: var(--white);
+            padding: 13px 28px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 3px 10px rgba(37, 211, 102, 0.25);
+        }
+
+        .btn-whatsapp:hover { background: #1da851; }
+
+        footer {
+            margin-top: 30px;
+            padding: 18px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header { padding: 40px 15px; }
+            .container { margin: 15px; padding: 18px; }
+        }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>ورشة كهرباء وتصحيح أعطال السيارات</h1>
-        <p>خدمات احترافية لبرمجة الحساسات، إصلاح الضفائر، وفحص الكمبيوتر بدقة عالية</p>
+        <h1>ورشة محمد لكهرباء السيارات</h1>
+        <p>تشخيص احترافي، وبرمجة الحساسات، وإصلاح الضفائر، وفحص أنظمة السيارة بدقة واحترافية</p>
     </header>
 
-    <div class="container">
+    <main class="container">
         <h2>خدماتنا الرئيسية</h2>
         <div class="services">
-            <div class="service-card">
+            <section class="service-card">
                 <h3>فحص كمبيوتر شامل</h3>
-                <p>تشخيص دقيق لكافة أعطال الأنظمة الإلكترونية والأكواد.</p>
-            </div>
-            <div class="service-card">
+                <p>تشخيص دقيق لأعطال الأنظمة الإلكترونية وقراءة الأكواد ومسحها.</p>
+            </section>
+
+            <section class="service-card">
                 <h3>إصلاح الضفائر والأسلاك</h3>
-                <p>معالجة الالتماسات وإصلاح ضفائر المحرك بحرفية تامة.</p>
-            </div>
-            <div class="service-card">
+                <p>معالجة الأعطال الكهربائية والالتماسات وإصلاح ضفائر المحرك بعناية.</p>
+            </section>
+
+            <section class="service-card">
                 <h3>صيانة الدينامو والسلف</h3>
-                <p>إصلاح وتغيير قطع الغيار وتأمين كفاءة شحن البطارية.</p>
-            </div>
+                <p>فحص وإصلاح الدينامو والسلف وضمان كفاءة شحن البطارية.</p>
+            </section>
+
+            <section class="service-card">
+                <h3>برمجة الحساسات والأنظمة</h3>
+                <p>فحص وبرمجة الحساسات وإعداد الأنظمة الإلكترونية حسب نوع السيارة.</p>
+            </section>
         </div>
 
-        <a href="https://wa.me/" class="btn-whatsapp" target="_blank">تواصل معنا عبر واتساب</a>
-    </div>
+        <div class="contact-box">
+            <h2>للتواصل والحجز</h2>
+            <p>تواصل معنا عبر واتساب واحجز موعد فحص سيارتك.</p>
+            <a href="https://wa.me/967772313631?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%AD%D9%88%D9%84%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">تواصل معنا عبر واتساب</a>
+        </div>
+    </main>
 
     <footer>
-        جميع Rights Reserved &copy; 2026 - مهندس كهرباء السيارات
+        جميع الحقوق محفوظة &copy; 2026 - ورشة محمد لكهرباء السيارات
     </footer>
-
 </body>
 </html>
-ث
